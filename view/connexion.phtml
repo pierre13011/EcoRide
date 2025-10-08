@@ -1,0 +1,25 @@
+<?php include __DIR__ . '/header.phtml'; ?>
+
+    <main>
+        <div class="container d-flex flex-column align-items-center my-5">
+            <form>            
+                <fieldset class="d-flex flex-column gap-3 border p-3 text-center">
+                    <legend>Connexion</legend>
+
+                    <label>Email ou Pseudo</label> 
+                        <input id="pseudo" type="text" required>
+
+                    <label>Mot de passe</label>
+                         <input id="password" type="password" required>
+
+                    <button type="submit" class="btn btn-dark">Se connecter</button>
+
+                    <div class="auth-messages" aria-live="polite"></div>
+                        <p>Pas encore inscrit ? <a href="inscription.php">S'inscrire</a></p>
+
+                </fieldset>
+            </form>  
+        </div>                         
+    </main>
+    
+<?php include __DIR__ . '/footer.phtml'; ?>

@@ -1,0 +1,189 @@
+/* ##################################################################### */
+/* ############################# VARIABLES ############################# */
+/* ##################################################################### */
+
+:root {
+    --gt-color-primary:#F8EDD9 ;
+    --gt-color-light: #327329;
+    --gt-color-dark:#133020 ;
+    --gt-color-bright:#F0BE49;
+    --gt-color-warm:#DD5C36;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color:#fff;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+/* ##################################################################### */
+/* ########################### STYLES DE BASE ########################## */
+/* ##################################################################### */
+
+main, section {
+
+    background-color: var(--gt-color-primary);
+}
+
+
+ footer {
+    text-align: center;
+    margin-bottom: auto;
+    padding: 2em;
+    background-color:#000;
+    color: #fff;
+
+}
+
+/* ##################################################################### */
+/* ######################## CLASSES UTILITAIRES ######################## */
+/* ##################################################################### */
+
+
+
+
+/* ##################################################################### */
+/* ############################## Covoiturage ########################## */
+/* ##################################################################### */
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color:var(--gt-color-primary);
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, button {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid --gt-color-warm;
+}
+
+button {
+  background-color:var(--gt-color-warm);
+  color: white;
+  cursor: pointer;
+}
+
+.card {
+  background: var(--gt-color-warm);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+img {
+ height: 65px; ;
+ width: 65px;
+}
+
+.no-result {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  margin: 5px;
+}
+
+.btn-outline {
+  background: white;
+  border: 1px solid #000;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.btn-detail {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+
+
+/* ##################################################################### */
+/* ######################## HEADER DE L'ACCUEIL ######################## */
+/* ##################################################################### */
+
+header{
+  padding: 2em;
+}
+
+.main__header {
+  height: 40vh;
+
+  display:flex;
+  flex-direction: column;
+  
+  align-items: center;
+
+  background-image: url(../Doc/img/iceland-4992421_1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  }
+
+
+.booking-form {
+        display: flex;
+        flex-wrap: nowrap; 
+        align-items: center; 
+        gap: 15px; 
+    }
+
+    .booking-form .form-group,
+    .booking-form .form-date-from,
+    .booking-form .form-quantity,
+    .booking-form .form-submit {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .booking-form input[type="text"],
+    .booking-form input[type="date"],
+    .booking-form input[type="number"],
+    .booking-form input[type="submit"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+  
